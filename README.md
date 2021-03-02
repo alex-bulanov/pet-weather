@@ -8,4 +8,4 @@
 * Получение данных о геолокации
 * Получение прогноза погоды
 
-[посмотреть](https://pet-weather.netlify.app/)
+  [посмотреть](https://pet-weather.netlify.app/)
