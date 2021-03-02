@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Простой виджет прогноза погоды">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>weather-forecast</title>
+</head>
+
+<body>
+
+  <div class="container" style="padding: 4em 15px;">
+
+    <h1 class="visually-hidden">Прогноз погоды</h1>
+
+    <div class="weather">
+      <div class="weather__wrapper">
+        <div class="weather__col">
+          <h2 class="weather__title">City</h2>
+          <p class="weather__temp"> <span class="weather__temp-value">29</span></p>
+          <p class="weather__temp-feels-like">Ощущается как <span class="weather__temp-feels-like-value"></span>°</p>
+          <div class="weather__container">
+            <img class="weather__icon" src="./images/Sun.svg" width="16" height="16" alt="иконка погоды">
+            <p class="weather__disc">Sunny</p>
+          </div>
+          <p class="weather__date"><span class="weather__date-day">28</span> <span
+              class="weather__date-month">Фев</span> <span class="weather__date-year">2021</span></p>
+        </div>
+        <div class="weather__col">
+          <div class="weather__extension">
+            <p class="weather__temp-max">Макс.: <span class="weather__temp-max-value">34</span>°</p>
+            <p class="weather__temp-min">Мин.: <span class="weather__temp-min-value">23</span>°</p>
+            <p class="weather__humidity">Влажность: <span class="weather__humidity-value">95</span>%</p>
+            <p class="weather__pressure">Давление: <span class="weather__pressure-value">768</span> мм.р.ст.</p>
+            <p class="weather__wind">Ветер: </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Сообщение об ошибке  -->
+  <template id="error">
+    <div class="error">
+      <p class="error__message">Ошибка загрузки данных о погоде</p>
+      <button class="error__button">Попробовать снова</button>
+    </div>
+  </template>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
